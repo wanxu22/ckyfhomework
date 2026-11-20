@@ -1,0 +1,22 @@
+--cpu Cortex-M3
+"task1led\startup_stm32f103xb.o"
+"task1led\main.o"
+"task1led\gpio.o"
+"task1led\stm32f1xx_it.o"
+"task1led\stm32f1xx_hal_msp.o"
+"task1led\stm32f1xx_hal_gpio_ex.o"
+"task1led\stm32f1xx_hal.o"
+"task1led\stm32f1xx_hal_rcc.o"
+"task1led\stm32f1xx_hal_rcc_ex.o"
+"task1led\stm32f1xx_hal_gpio.o"
+"task1led\stm32f1xx_hal_dma.o"
+"task1led\stm32f1xx_hal_cortex.o"
+"task1led\stm32f1xx_hal_pwr.o"
+"task1led\stm32f1xx_hal_flash.o"
+"task1led\stm32f1xx_hal_flash_ex.o"
+"task1led\stm32f1xx_hal_exti.o"
+"task1led\system_stm32f1xx.o"
+--strict --scatter "task1led\task1led.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "task1led.map" -o task1led\task1led.axf
