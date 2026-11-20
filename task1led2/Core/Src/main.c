@@ -101,7 +101,7 @@ uint32_t lasttime=0;
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-		if ((time - lasttime)>=500)
+		if ((time - lasttime)>=250)
 		{
 			HAL_GPIO_TogglePin(GPIOA,GPIO_PIN_0);
 			lasttime=time;
